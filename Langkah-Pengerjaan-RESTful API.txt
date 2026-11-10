@@ -1,0 +1,32 @@
+File dan folder terkait:
+app.js => routes => controllers => models
+
+PathPendukung dan PathUtama lihat pada file daftar topik (SPON)
+
+Model
+- prodiModel.js			=> PathPendukung => Contoh: PenerjemahModel.js
+- mahasiswaModel.js		=> PathUtama	 => Contoh: OrderTerjemahanModel.js
+
+Controller
+- prodiController.js		=> PenerjemahController.js
+- mahasiswaController.js	=> OrderTerjemahanController.js
+
+Route
+- prodiRoute.js			=> PenerjemahRoute.js
+- mahasiswaRoute.js		=> OrderTerjemahanRoute.js
+
+Clone repository: https://github.com/nurrachmat/restful-api-app
+
+1. Buat file .env, lalu salin isi .env.example
+2. Periksa package.json, pastikan ada dependencies express, mongoose, cors, dotenv, dan nodemon
+3. Jalankan npm install
+4. Jalankan npm run dev => SS bukti tangkapan layar (1. Terminal server)
+5. Ubah file PathPendukung terlebih dahulu (Model, Controller dan Route)
+6. Uji POST dan GET PathPendukung menggunakan POSTMAN 
+7. Buka MongoDB Compas / Atlas => SS bukti tangkapan layar (2. Isi basis data)
+8. Ubah file PathUtama (Model, Controller dan Route)
+9. Uji POST PathUtama menggunakan POSTMAN => SS bukti tangkapan layar (3. POST [path])
+10. Uji GET filtering PathUtama menggunakan POSTMAN => SS bukti tangkapan layar (4. GET [path]?[filter]=...)
+11. Uji GET detail PathUtama menggunakan POSTMAN => SS bukti tangkapan layar (5. GET [path]/:id)
+12. Uji POST satu skenario galat (tanpa teks atau duplikat nilai unik) => SS bukti tangkapan layar (6. Skenario galat)
+13. Uji GET projection PathUtama menggunakan POSTMAN 
